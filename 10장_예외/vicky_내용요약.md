@@ -131,7 +131,7 @@ public E get(int index) {
   }
 }
 ```
-### 예외번역(exception translation)
+### 예외연쇄(exception chaining)
 + 예외를 번역할때, 저수준 예외가 디버깅에 도움이 된다면 예외 연쇄(exception chaining)를 사용하는게 좋다.
 + 예외 연쇄란, 문제의 근본 원인(cause)인 저수준 예외를 고수준 예외에 실어 보내는 방식이다. 그러면 별도의 접근자 메서드(Throwable의 getCause 메서드)를 통해 필요하면 언제든 저수준 예외를 꺼내볼 수 있다.
 ```java
